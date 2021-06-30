@@ -23,21 +23,27 @@ The following DID methods are supported:
 
 - [eosio](https://github.com/Gimly-Blockchain/eosio-did-resolver)
 
-## Curl Tests
-
-Run service with
+## Build
 
 ```
-npm start
+npm i
+docker build . -t eosio-driver
 ```
 
-then run queries
+## Run 
 
 ```
-curl -X GET http://localhost:8081/1.0/identifiers/did:eosio:accountname
-curl -X GET http://localhost:8081/1.0/identifiers/did:eosio:jungle:accountname
+docker run eosio-driver
+```
+
+## Tests
+
+```
+curl -X GET http://localhost:8081/1.0/identifiers/did:eosio:eos:eoscanadacom
+curl -X GET http://localhost:8081/1.0/identifiers/did:eosio:4667b205c6838ef70ff7988f6e8257e8be0e1284a2f59699054a018f743b1d11:caleosblocks
 ```
 
 ## Example DIDs
 
-- `did:eosio:TODO`
+- `did:eosio:eos:eoscanadacom`
+- `did:eosio:4667b205c6838ef70ff7988f6e8257e8be0e1284a2f59699054a018f743b1d11:caleosblocks`
