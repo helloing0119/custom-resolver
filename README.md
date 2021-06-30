@@ -15,7 +15,7 @@ Contributors:
 
 Driver for the eosio DID methods to be used in the [Universal Resolver](https://github.com/decentralized-identity/universal-resolver). Structure based on [uPort-did-driver](https://github.com/uport-project/uport-did-driver). The Docker image is hosted on Docker Hub here:
 
-<https://hub.docker.com/r/TODO/>
+[https://hub.docker.com/repository/docker/gimlyblockchain/eosio-universal-resolver-driver](https://hub.docker.com/repository/docker/gimlyblockchain/eosio-universal-resolver-driver)
 
 The file `src/server.js` is an small Express Node app acting as a thin wrapper around the [Javascript DID resolver](https://github.com/decentralized-identity/did-resolver). It listens to port 8081.
 
@@ -32,13 +32,13 @@ The following DID methods are supported:
 
 ```
 npm i
-docker build . -t eosio-driver
+docker build . -t gimlyblockchain/eosio-universal-resolver-driver
 ```
 
-## Run 
+## Run
 
 ```
-docker run --name eosio-driver -p 8081:8081 eosio-driver
+docker run --name eosio-driver -p 8081:8081 gimlyblockchain/eosio-universal-resolver-driver
 ```
 
 To stop
