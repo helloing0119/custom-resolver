@@ -38,7 +38,13 @@ docker build . -t eosio-driver
 ## Run 
 
 ```
-docker run eosio-driver
+docker run --name eosio-driver -p 8081:8081 eosio-driver
+```
+
+To stop
+```
+docker stop eosio-driver -t 0
+docker rm eosio-driver
 ```
 
 ## Tests
