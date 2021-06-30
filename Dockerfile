@@ -7,6 +7,6 @@ ADD LICENSE NOTICE package.json package-lock.json README.md ./
 ADD src/ src/
 RUN npm ci --production
 
-EXPOSE 8081
+EXPOSE 8080
 
 ENTRYPOINT ["node", "/src/server.js"]

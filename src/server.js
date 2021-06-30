@@ -1,5 +1,5 @@
 const app = require("./app");
 
-app.listen(8081, function () {
-  console.log("Resolver app listening on port 8081...");
+app.listen(8080, function () {
+  console.log("Resolver app listening on port 8080...");
 });

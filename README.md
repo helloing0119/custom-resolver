@@ -17,7 +17,7 @@ Driver for the eosio DID methods to be used in the [Universal Resolver](https://
 
 [https://hub.docker.com/r/gimlyblockchain/eosio-universal-resolver-driver](https://hub.docker.com/r/gimlyblockchain/eosio-universal-resolver-driver)
 
-The file `src/server.js` is an small Express Node app acting as a thin wrapper around the [Javascript DID resolver](https://github.com/decentralized-identity/did-resolver). It listens to port 8081.
+The file `src/server.js` is an small Express Node app acting as a thin wrapper around the [Javascript DID resolver](https://github.com/decentralized-identity/did-resolver). It listens to port 8080.
 
 The following DID methods are supported:
 
@@ -38,7 +38,7 @@ docker build . -t gimlyblockchain/eosio-universal-resolver-driver
 ## Run
 
 ```
-docker run --name eosio-driver -p 8081:8081 gimlyblockchain/eosio-universal-resolver-driver
+docker run --name eosio-driver -p 8080:8080 gimlyblockchain/eosio-universal-resolver-driver
 ```
 
 To stop
@@ -50,8 +50,8 @@ docker rm eosio-driver
 ## Tests
 
 ```
-curl -X GET http://localhost:8081/1.0/identifiers/did:eosio:eos:eoscanadacom
-curl -X GET http://localhost:8081/1.0/identifiers/did:eosio:4667b205c6838ef70ff7988f6e8257e8be0e1284a2f59699054a018f743b1d11:caleosblocks
+curl -X GET http://localhost:8080/1.0/identifiers/did:eosio:eos:eoscanadacom
+curl -X GET http://localhost:8080/1.0/identifiers/did:eosio:4667b205c6838ef70ff7988f6e8257e8be0e1284a2f59699054a018f743b1d11:caleosblocks
 ```
 
 ## Example DIDs
