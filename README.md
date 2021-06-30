@@ -23,6 +23,11 @@ The following DID methods are supported:
 
 - [eosio](https://github.com/Gimly-Blockchain/eosio-did-resolver)
 
+## Prerequisits
+
+- Docker
+- nodejs (npm v16.3.0)
+
 ## Build
 
 ```
