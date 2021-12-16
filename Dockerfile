@@ -1,5 +1,4 @@
 FROM node:16.3.0
-LABEL repository="git@github.com:Gimly-Blockchain/eosio-did-universal-resolver-driver.git"
 
 USER root
 

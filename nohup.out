@@ -1,0 +1,5 @@
+
+> eosio-did-universal-resolver-driver@0.1.0 start /home/ubuntu/eosio-did-universal-resolver-driver
+> node src/server.js
+
+Resolver app listening on port 8080...

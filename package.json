@@ -1,28 +1,14 @@
 {
-  "name": "eosio-did-universal-resolver-driver",
+  "name": "eosio-custom-resolver",
   "version": "0.1.0",
-  "description": "eosio did driver for universal resolver",
+  "description": "",
   "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",
-    "test": "jest",
-    "build": "docker build -t eosio-did-universal-resolver-driver:latest -t eosio-did-universal-resolver-driver:$npm_package_version .",
-    "push": "docker push eosio-did-universal-resolver-driver:latest && docker push eosio-did-universal-resolver-driver:$npm_package_version"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Gimly-Blockchain/eosio-did-universal-resolver-driver.git"
-  },
-  "author": "Julius Rahaus",
-  "license": "Apache-2.0",
-  "jest": {
-    "testEnvironment": "node",
-    "coveragePathIgnorePatterns": [
-      "/node_modules/"
-    ]
+    "test": "jest"
   },
   "dependencies": {
-    "did-resolver": "^3.1.0",
+    "did-resolver": "^3.1.5",
     "eosio-did-resolver": "^0.1.3",
     "express": "^4.17.1",
     "node-fetch": "^2.6.1"
